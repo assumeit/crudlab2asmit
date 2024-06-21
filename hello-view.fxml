@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="627.0" prefWidth="561.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2asmitttt.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+    <TextField fx:id="uid" text="pid" />
+    <TextField fx:id="uname" text="playername" />
+    <TextField fx:id="uemail" text="playeremail" />
+    <TextField fx:id="upassword" text="password" />
+    <Button mnemonicParsing="false" onAction="#InsertData" text="Insert" />
+    <Button mnemonicParsing="false" onAction="#UpdateData" text="Update" />
+    <Button mnemonicParsing="false" onAction="#DeleteData" text="Delete" />
+    <Button mnemonicParsing="false" onAction="#LoadData" text="LoadData" />
+    <Button onAction="#onHelloButtonClick" text="Fetch" />
+    <TableView fx:id="userTable" prefHeight="200.0" prefWidth="327.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="PID" />
+            <TableColumn fx:id="name" prefWidth="75.0" text="PlayerName" />
+            <TableColumn fx:id="email" prefWidth="75.0" text="PlayerEmail" />
+            <TableColumn fx:id="password" prefWidth="75.0" text="Password" />
+        </columns>
+    </TableView>
+</VBox>
